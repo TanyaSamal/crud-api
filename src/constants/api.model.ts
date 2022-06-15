@@ -7,7 +7,7 @@ export enum METHOD {
 
 export enum ERRORS {
   URL_NOT_FOUND = 'Requested address doesn`t exist',
-  NOT_ALLOWED = 'This method isn\'t allowed',
+  INVALID_FIELD = 'One of the body properties is in the wrong format',
   BAD_REQUEST = 'Bad request',
   MISSING_FIELD = 'Missing required fields in request body',
   USER_NOT_FOUND = 'User not found',
