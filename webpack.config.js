@@ -5,13 +5,16 @@ const {
 } = process.env;
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: {
+    bundle: './src/index.ts',
+    scaling: './src/scaling.ts',
+  },
   mode: NODE_ENV,
   target: 'node',
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].js',
     publicPath: 'dist/',
   },
   module: {
