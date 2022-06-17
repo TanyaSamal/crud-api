@@ -28,7 +28,7 @@ export const validateBody = (userBody: IUser): boolean => {
 
   let isHobbyElString = true;
 
-  if (isHobbyArray) {
+  if (isHobbyArray && userBody.hobbies.length !== 0) {
     userBody.hobbies.forEach((hobby) => {
       if (typeof hobby !== 'string') {
         isHobbyElString = false;

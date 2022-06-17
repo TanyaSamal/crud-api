@@ -2,19 +2,14 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "target": "es6",
-    "module": "commonjs",
+    "module": "Node16",
     "noImplicitAny": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
     "sourceMap": true,
-    "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "*": [
-        "node_modules/*"
-      ]
-    }
+    "outDir": "./dist"
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"],
+  "exclude": [ "node_modules"]
 }

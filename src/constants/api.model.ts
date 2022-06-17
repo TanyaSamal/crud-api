@@ -12,6 +12,7 @@ export enum ERRORS {
   MISSING_FIELD = 'Missing required fields in request body',
   USER_NOT_FOUND = 'User not found',
   INVALID_ID = 'Invalid ID format',
+  SERVER_ERROR = 'Error on the server side',
 }
 
 export const CONTENT_TYPE = { 'Content-Type': 'application/json' };
